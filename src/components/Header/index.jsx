@@ -33,9 +33,15 @@ export default function Header({ autenticado }) {
             <UserPicture src="https://img.myloview.com.br/quadros/user-icon-human-person-symbol-avatar-login-sign-700-259624278.jpg" />
           ) : (
             <>
-              <MenuRigth href="#">Home</MenuRigth>
-              <Button title="Entrar" />
-              <Button title="Cadastrar" />
+              <MenuRigth href="/">Home</MenuRigth>
+              <Button
+                title="Entrar"
+                onClick={() => (window.location.href = "/login")}
+              />
+              <Button
+                title="Cadastrar"
+                onClick={() => (window.location.href = "/cadastro")}
+              />
             </>
           )}
         </Row>
