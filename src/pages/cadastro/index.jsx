@@ -29,7 +29,7 @@ const schema = yup
   })
   .required();
 
-export default function Login() {
+export default function Cadastro() {
   const {
     control,
     handleSubmit,
